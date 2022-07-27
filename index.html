@@ -1,52 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
       <title> Lorena's Page</title>
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=rock+salt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,400;1,700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <style>
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 1px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+         
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+          .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
         nav{
-  background-color:rgba(207, 165, 180, 0.6);
           color:white;
   font-size:20px;
     padding:8px;
-         
+
 
 }
+          .button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid rgb(101, 206, 245);
+    
+}
+
+.button1:hover {
+  background-color: rgb(101, 206, 245,0.8);
+  color: white;
+}
+
+
      body{
-          font-family: sans-serif;
              text-align: center;
-       background-color: rgba(248, 237,235,0.2);
-      }
+                       font-family: sans-serif;
+         color:white;
+   }
+          #paragraph{
+              padding-left:20px;
+              padding-right: 20px;
+              color: dimgray;
+              font-family: ;
+          }
+          #firstpart{
+               background: url("art.jpg");
+         background-size: cover; 
+            text-shadow: -5px 0px 5px #50e5fe;
+              color:white;
+            bottom:0;
+              right: 0;
+              left: 0;
+            width: 100%;
+              height: 30%;
+              position: absolute;
+              top:0;
+          }
+          #secondpart{
+                right: 0;
+              left: 0;
+            width: 100%;
+              height: 70%;
+              position: absolute;
+              bottom:0;
+          }
 
-col-md-4{
-    text-align: center;
-    padding: 20px;
-
-}
-.col-md-6{
-    text-align: center;
-    padding: 40px;
-}
-.col-md-6 img {
-  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
-        width:25%;
-            height: auto;
-    margin-left: 10%;
-
-
-}
-.col-md-6 h4{
-  border-left-style:double;
-  border-color:grey;
-}
-      hr{
-          color:white;
-          width: 20%;
-      }
+     
 main{
-    font-family: sans-serif;
     color:darkgray;
     font-size: 15px;
+    margin:0;
+    padding: 0;
 
 }
 .c-site-footer{
@@ -55,24 +117,47 @@ main{
     left: 0;
     width: 100%;
     position:fixed;
-      background-color:rgba(207, 165, 180, 0.6);
+      background-color:	
+rgba(80,229,254, 0.1);
     color:white;
-  height:15%;
-  
-
+ 
+    
 }
+          #division{
+              display: flex;
+              justify-content:space-around;
+             
+          }
+          #firsthalf{
+               border-right: 2px solid #50e5fe;
+              padding-right: 200px;
+              
+          }
+        
+          #textshadow{
+              text-shadow: -5px 0px 5px #50e5fe;
+              font-family: 'Ibarra Real Nova', serif;
+              font-size: 70px;
+          }
       .c-site-header{
           top:0;
           left:0;
           width: 100%;
-        position:fixed;
-          color:white;
+        position:relative;
+          color:white; 
       }
-
+          .c-site-header:hover{
+              border-color: aqua;
+              color: antiquewhite;
+          }
+          #feedback{
+              margin-bottom: 10%;
+          }
       </style>
     </head>
     <body>
       <main>
+     <div id="firstpart">
       <header class="c-site-header">
         <nav aria-label="Main Site Links.">
           <a style="color:white;" href="#">About Me</a>
@@ -83,45 +168,105 @@ main{
       </header> 
     <br>
     <br>
-    <h1>Lorena C.</h1>
-        <hr>
+
+    <h1 id="textshadow">Lorena C.</h1>
+            
+     </div>
+        <div id="secondpart">
     
-        <h4><i>Welcome to my page</i></h4>
-        <div class="row">
-          <div class="col-md-6" style="align-content: center;">
-            <img src="IMG_6384.PNG" alt="pic of me">
-          </div>
-         <div class="col-md-6 ">
+    
+        <h2><i>Welcome to my page</i></h2>
+    
+         
+         <div id="paragraph">
+
+           <p > Travelling is one of my biggest pleasures as I consider that it educates an individual from cultural and gastronomic points of views. I visited countries like France, Italy, Spain, Monaco, Bulgaria but my favourite one by far is Italy. Starting with the food and ending with the views, Italy is a full package of beautiful Natural Landscapes, hystory, culture, tasty gastronomy and worldwide popular wines.
+            </p>
+        </div>
+            <div id="division">
+                <div id="firsthalf">
            
-        <h3>- About me - </h3> 
-           <h4>My chances as a worker are defined by the experience I have into the domain. I am currently studying for BSc (Hons) in Computing diploma to validate my knowledge and to increase my chances of obtaining a job in the industry. Along with my ongoing educational activity, I was working at a website for deepening the knowledge already gained, and to also prove my motivation. 
-I also designed and developed a Web Application using Asp.net core framework, which challenged me and also helped me define what I want to do after finishing my studies. 
-I am passionate and self-driven, and I need a chance to make my way into the industry so I can learn and become the worker which fits the market’s job description.
-            </h4>
-            <a href="#" class="fa fa-facebook" style="padding: 5px; font-size: 200%"></a>
-            <a href="#" class="fa fa-google" style="padding: 5px; font-size: 200%" ></a>
-           <a href="#" class="fa fa-instagram" style="padding: 5px; font-size: 200%"></a>
-        
-            <p><i>*As a personal note, to expose more about me, i attached the youtube trailer of my favorite movie 'A Curious Case of Benjamin Button'</i><br>
-            <iframe width="420" height="315"
-src="https://www.youtube.com/embed/iH6FdW39Hag">
-            </iframe>
-        </div>
-        </div>
+                    <p>You can find below a short video about Amalfi Coast.</p>
+                    <iframe width="420" height="315"
+                    src="https://www.youtube.com/embed/Mupom-sgjAU">
+                    </iframe>
+                 </div>
+                <div id="secondhalf">
+                    <p> Below you can see pictures from different places I visited:</p>  
+                        <img id="currentImg" alt="current image" src="amalfi.jpg" width="420px" height="315px">  
+                        <div>
+                         <button id="previous" class="button button1"> Previous</button>
+                        <button id="next" class="button button1">Next</button>
+                        </div>
+                
+                </div>
+            </div >
+            <div id="feedback" class="button button1">
+            <h2>Time for FEEDBACK. Please let me know what you think. </h2>
+            <ul id="list"></ul>
+                <label>Add your comment here:</label>
+                <input id="text" >
+                <button  id="button" class="button button1">SUBMIT</button>
+          </div>
+          </div>
         <footer class="c-site-footer">
-          <div class="row">
-            <div class="col-md-6">
-              <p><b><i class="fa fa-envelope"></i> sandulorena20@gmail.com
-                </b> </p>        
-             </div>
-                <div class="col-md-6">
-                  <p><b><i class="fa fa-phone">       </i>Phone:+447491738703</b></p>
-              </div>
-            </div>
+           <a href="" class="fa fa-facebook"></a>
+<a href="lorenacapraru@gmail.com" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/in/lorena-capraru-070723244/" class="fa fa-linkedin"></a>
         </footer >
-        
+
         </main>        
       </body>
   <script>
+      var pictures;
+
+// Describe this function...
+function showcurrent() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_currentImg3 = document.getElementById('currentImg');
+  element_currentImg3.replaceChildren();
+  element_currentImg3.setAttribute("src", pictures[0]);
+}
+
+
+pictures = ['https://images.pexels.com/photos/2928024/pexels-photo-2928024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/2931007/pexels-photo-2931007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'https://images.pexels.com/photos/8912460/pexels-photo-8912460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'];
+
+
+document.getElementById('next').addEventListener('click', (event) => {
+  let element_currentImg = document.getElementById('currentImg');
+  pictures.push(pictures.shift());
+  showcurrent();
+
+});
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  let element_currentImg2 = document.getElementById('currentImg');
+  pictures.unshift(pictures.pop());
+  showcurrent();
+
+});
+      
+      function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
+
+
+
+document.getElementById('button').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list');
+  let new_li = document.createElement('li');
+  new_li.innerText = getNumberOrString(document.getElementById('text').value);
+
+  element_list.appendChild(new_li);
+
+});
+      
+      
   </script>
 </html>
